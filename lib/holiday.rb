@@ -21,10 +21,10 @@ end
 second_supply_for_fourth_of_july(holiday_supplies)
 
 
-# Learn.co Textbook solution
+
 def add_supply_to_winter_holidays(holiday_hash, item)
- holiday_hash[:winter].each do |holiday, decorations|
-   decorations << item
+ holiday_hash[:winter].each do |holiday, decor|
+   decor << item
   end
 end
 
