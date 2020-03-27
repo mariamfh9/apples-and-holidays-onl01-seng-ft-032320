@@ -38,7 +38,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   holiday_hash[:spring][:memorial_day].push(supply)
 end
 
-add_supply_to_memorial_day(holiday_supplies, "baloons")
+add_supply_to_memorial_day(holiday_supplies, "beach chairs")
 
 
 
