@@ -20,6 +20,7 @@ def second_supply_for_fourth_of_july(holiday_hash)
   # return the second element in the 4th of July array
   fourth_of_july.each do |season, data|
     data.each do |holiday, supply|
+      if holiday == 
       return holiday:supply
     end 
   end
