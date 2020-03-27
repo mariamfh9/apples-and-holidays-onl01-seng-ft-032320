@@ -46,16 +46,8 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   holiday_hash[season][holiday_name] = supply_array
   holiday_hash
 end
-add_new_holiday_with_supplies(holiday_supplies, :fall, :succas, ["lulav", "esrog", "schach"])
+add_new_holiday_with_supplies(holiday_supplies, :fall, :birthday, ["balloons", "cake", "streamers"])
 
-# this is the basis for the method below that adds a whole new season to the hash
-# puts holiday_supplies[:aviv] = {:pesach => ["Matzah", "Maror"]}
-# puts holiday_supplies
-
-
-# Here we create a whole new season at what we could call the the "season-echelon"
-# The new echelon being created apparently must always be left of the 
-# equals (=) sign as shown below on line 94
 def add_new_season_and_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   holiday_hash[season] = {holiday_name => supply_array} # the new echelon being created is to the left of the equals sign.
   holiday_hash
