@@ -53,8 +53,8 @@ def add_new_season_and_holiday_with_supplies(holiday_hash, season, holiday_name,
   holiday_hash
 end
 
-mitzvos = ["seder", "matzah", "hagaddah"]
-add_new_season_and_holiday_with_supplies(holiday_supplies, :aviv, :pesach, mitzvos)
+eid = ["money", "food", "lights"]
+add_new_season_and_holiday_with_supplies(holiday_supplies, :carnival, :party, eid)
 
 
 def all_winter_holiday_supplies(holiday_hash)
