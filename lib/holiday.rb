@@ -49,7 +49,7 @@ end
 add_new_holiday_with_supplies(holiday_supplies, :fall, :birthday, ["balloons", "cake", "streamers"])
 
 def add_new_season_and_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-  holiday_hash[season] = {holiday_name => supply_array} # the new echelon being created is to the left of the equals sign.
+  holiday_hash[season] = {holiday_name => supply_array} 
   holiday_hash
 end
 
@@ -66,13 +66,6 @@ all_winter_holiday_supplies(holiday_supplies)
 
 
 def all_supplies_in_holidays(holiday_hash)
-  # iterate through holiday_hash and print items such that your readout resembles:
-  # Winter:
-  #   Christmas: Lights, Wreath
-  #   New Years: Party Hats
-  # Summer:
-  #   Fourth Of July: Fireworks, BBQ
-  # etc.
   holiday_hash.each do | season, holiday|
      puts "#{season.capitalize}:"
      holiday.each do |holiday, item|
@@ -86,8 +79,6 @@ all_supplies_in_holidays(holiday_supplies)
 
 
 def all_holidays_with_bbq(holiday_hash)
-  # return an array of holiday names (as symbols) where supply lists
-  # include the string "BBQ"
   holiday_hash.map do |season, holiday|
     holiday.map do |holiday, item|
       holiday if item.include?("BBQ")
